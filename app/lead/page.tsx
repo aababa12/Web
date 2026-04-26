@@ -24,12 +24,27 @@ export default function LeadPage() {
 
           <div>
             <label htmlFor="phone">טלפון</label>
-            <input id="phone" name="phone" type="tel" placeholder="050-123-4567" />
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              dir="ltr"
+              inputMode="tel"
+              className="ltr-field"
+              placeholder="050-123-4567"
+            />
           </div>
 
           <div>
             <label htmlFor="email">אימייל</label>
-            <input id="email" name="email" type="email" placeholder="name@example.com" />
+            <input
+              id="email"
+              name="email"
+              type="email"
+              dir="ltr"
+              className="ltr-field"
+              placeholder="name@example.com"
+            />
           </div>
 
           <div>

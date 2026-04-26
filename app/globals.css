@@ -19,12 +19,16 @@ html,
 body {
   margin: 0;
   min-height: 100%;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Heebo", "Assistant", "Rubik", "Noto Sans Hebrew", sans-serif;
   background:
     radial-gradient(circle at top left, rgba(198, 92, 46, 0.18), transparent 28%),
     radial-gradient(circle at bottom right, rgba(53, 116, 93, 0.16), transparent 24%),
     var(--bg);
   color: var(--text);
+  font-size: 16px;
+  line-height: 1.7;
+  word-spacing: 0.05em;
+  text-align: start;
 }
 
 a {
@@ -94,14 +98,20 @@ textarea {
 
 .lead-copy {
   padding: 20px;
+  text-align: start;
 }
 
 .eyebrow {
   margin: 0 0 16px;
   color: var(--accent-strong);
+  font-size: 0.82rem;
+}
+
+.eyebrow-latin {
+  direction: ltr;
+  unicode-bidi: isolate;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  font-size: 0.82rem;
 }
 
 .lead-copy h1 {
@@ -120,9 +130,10 @@ textarea {
 
 .lead-points {
   margin: 0;
-  padding-right: 20px;
+  padding-inline-start: 20px;
   color: var(--text);
   line-height: 1.9;
+  text-align: start;
 }
 
 .lead-form {
@@ -138,6 +149,7 @@ textarea {
   display: block;
   margin-bottom: 8px;
   font-size: 0.95rem;
+  text-align: start;
 }
 
 .lead-form input,
@@ -145,13 +157,21 @@ textarea {
   width: 100%;
   border: 1px solid var(--line);
   border-radius: 18px;
-  padding: 14px 16px;
+  padding-block: 14px;
+  padding-inline: 16px;
   background: #fff;
   color: var(--text);
+  text-align: start;
 }
 
 .lead-form textarea {
   resize: vertical;
+}
+
+.ltr-field {
+  direction: ltr;
+  unicode-bidi: isolate;
+  text-align: start;
 }
 
 .lead-form button {
